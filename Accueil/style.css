@@ -1,0 +1,507 @@
+@font-face {
+    font-family: "panthera"; 
+    src:url("Police/Panthera.otf");}
+@font-face {
+    font-family: "WakandaForever" ;
+    src: url("Police/WakandaForever.ttf");
+}
+@font-face {
+    font-family: "Beyno";
+    src: url("Police/Beyno.ttf");
+}
+@font-face {
+    font-family: "cantarell";
+    src: url("Police/Cantarell.ttf");
+}
+
+
+
+body{
+	position: absolute; /* pour que les lignes suivent l'écran */
+	left:0; /*prendre toute la largeur*/
+	right:0; /*prendre toute la largeur*/
+	margin: 0; /* coller la page aux contours */
+	color: #fff;
+	background: #000 url("arrière_plan.png") no-repeat top center;
+	background-size: 100% auto;
+	font-family: "cantarell";
+	font-size: 12px;
+}
+
+h1{
+	font-family: "Beyno";
+	font-size: 36px;
+}
+
+.font_panthera{
+	font-family: "panthera";
+}
+
+header h1{font-size:16pt;margin-left:4rem;font-family:Beyno;}
+
+header h1:hover{
+    text-decoration: underline;
+	color: #9E91B7;
+	cursor: pointer;
+}
+
+h2{
+	font-family: "Beyno";
+	font-size: 14pt;
+}
+
+.back1{
+	background: url("Accueil/Pantherhome1..png") no-repeat top right / contain;
+	width:60vw;
+	height:100vw;
+}
+
+.accueil_caroussel{
+	background:#021740;
+}
+
+.back_radius_img{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	margin-top:17rem;
+	background:#fff;
+	height:42rem;
+	border-radius:8px;
+}
+
+.desc{
+	margin:auto;
+	width:380px;
+	color:#021740;
+}
+
+.desc_title{
+	font-size:20pt;
+	text-align:center;
+	margin-bottom:.6rem;
+}
+
+.desc_bt{
+	background:#07338C;
+	color:#fff;
+	border-radius:6px;
+	padding: .4rem 1rem;
+}
+
+div{
+	position: relative; /* impacte positif sur les élements absolute */
+}
+
+img{
+	max-width: 100%; /* respecter le contenant */
+}
+
+button{
+	font-family: "Rajdhani";
+	font-size: 20px;
+}
+
+h1,h2{
+	margin: 0; /* eviter espacements */
+}
+
+form .form_spacer, form input[type=text], form input[type=mail], form select{
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #888;
+	padding: .2rem 0;
+	color: #888;
+}
+
+form input[type=text], form input[type=mail], form select{
+	width: 100%;
+}
+
+form p{
+	color: #888;
+}
+
+.c9E91B7{
+	color: #9E91B7;
+}
+
+.lines{
+	background: #BCBBBD30;
+}
+
+.lines.l1{
+	width: 4px;
+	left: 5rem;
+	top: 0;
+	height: 50vh;
+}
+
+.lines.l2{
+	width: 4px;
+	left: 6rem;
+	top: 0;
+	height: 30vh;
+}
+
+.hover_yellow:hover{
+	filter: sepia(100%) hue-rotate(0deg) saturate(10);
+	cursor: pointer;
+}
+
+.in_mx20>div>img:hover{
+    transform: scale(1.1); /* zoom 10% */
+}
+
+.contact{
+	background: linear-gradient(315deg, #0A2636, #666053 100%); /*version opaque du fond*/
+	border: 1px solid;
+	border-image: linear-gradient(315deg, #19587D66, #EDDEBF66 100%) 1;
+}
+
+.bt_simple{
+	border: none; /*Pas de contour*/
+	border-radius: 0; /*Pas d'arrondi de contour*/
+	background: none;
+	font-size: 18px; /*Taille de police du bouton*/
+}
+
+.bt_gradient_w{
+	padding: 1rem 3rem; /*Espacement interne du bouton*/
+	background: linear-gradient(to right, #EDDEBF66, #89000899 100%);
+	color: #fff; /*Couleur du texte du bouton*/
+    transition: all 0.2s ease;
+}
+
+.bt_gradient_t{
+	padding: .8rem calc(1vw + 1rem); /*Espacement interne du bouton*/
+	border: 1px solid;
+	border-image: linear-gradient(315deg, #19587D, #EDDEBF 100%) 1;
+	color: #fff; /*Couleur du texte du bouton*/
+    transition: all 0.2s ease;
+}
+
+.bt_gradient_w:hover{
+	background: linear-gradient(to right, #EDDEBF99, #890008 100%); /*version opaque du fond*/
+    cursor:pointer;
+}
+.bt_gradient_t:hover{
+    background: #fff4;
+    cursor:pointer;
+}
+
+.background_clair{
+	background: linear-gradient(to right, #010101, #263654);
+}
+
+.section_contact {
+	padding-top: 11rem;
+	min-height: 60vh;
+	width: 100%;
+	background: url("Accueil/Pantherhome7.png") no-repeat top center/cover;
+}
+
+.bord {
+	padding: 30px;
+	border-radius: 9rem;
+	background: linear-gradient(180deg, #fff, #fff 20%, #fff1 98%, #fff0 100%);
+
+}
+
+.section_contact header {
+	font-size: 16px;
+	color: black;
+	text-align: center;
+}
+
+.section_contact h1 {
+	font-size: 35px;
+	font-weight: 600;
+	font-family: "cantarell";
+	color: black;
+	text-align: center;
+}
+
+.section_contact p {
+	font-size: 15px;
+	font-weight: 200;
+	color: black;
+	text-align: left;
+}
+
+.section_contact .box {
+	border: 1px solid rgb(86, 51, 121);
+	background:none;
+	width:464px; /* pour un resultat de 520px */
+	height:34px; /* pour un resultat de 56px */
+	border-radius: 38px;
+	padding: 10px 27px; /* ajoute*/
+	resize: none;
+}
+
+.section_contact textarea.box{
+	height:9rem;
+}
+
+.section_contact .btn{
+	margin-top:1.5rem;
+	text-align:center;
+	width:8rem;
+	padding: .8rem 0;
+	background:#fcf;
+	color:#204;
+	font-weight:bold;
+	border-radius:1.6rem;
+}
+
+.img_add_rt{
+	left: 5rem;
+	top: -5rem;
+}
+
+.img_add_rt>img{
+	width: 9rem;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.large-font{
+	font-size: 20px;
+}
+
+.medium-font{
+	font-size: 18px;
+}
+
+.xlarge-font{
+	font-size: 22px;
+}
+
+.tiny-font{
+	font-size: 15px;
+}
+
+.abs{
+	position: absolute;
+}
+
+.r0{
+	right: 0;
+}
+
+.l0{
+	left: 0;
+}
+
+.t0{
+	top: 0;
+}
+
+.flex{
+	display: flex;
+}
+
+.flexbetween{
+	justify-content: space-between;
+}
+
+.flex_center{
+	justify-content: center;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.tac{
+	text-align: center;
+}
+
+.tar{
+	text-align: right;
+}
+
+.inline{
+	display:inline;
+}
+
+.justif_text{
+	text-align: justify;
+}
+
+.v_center{
+	align-items: center;
+}
+
+.lh16{
+	line-height: 1.6rem;
+}
+
+.paragraphs{
+	margin-bottom: 50px;
+}
+
+.in_mx20>div{
+	max-width: 30%;
+}
+
+
+.in_mx20>div>img{
+    transition: transform 0.2s ease;
+}
+
+.in_px1v>div{
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.fs11{
+	font-size:11pt;
+}
+
+.ma{
+	margin-left: auto; margin-right: auto;
+}
+
+.w100v{
+	width: 100vw;
+}
+
+.w100p{
+	width: 100%;
+}
+
+.w15v{
+	width: 15vw;
+}
+
+.w25v{
+	width: 25vw;
+}
+
+.w35v{
+	width: 35vw;
+}
+
+.w40v{
+	width: 40vw;
+}
+
+.w60v{
+	width: 60vw;
+}
+
+.w70v{
+	width: 70vw;
+}
+
+.w90v{
+	width: 90vw;
+}
+
+.mh140{
+	min-height:14rem;
+}
+
+.mr15{
+	margin-right: 1.5rem;
+}
+
+.ml25{
+	margin-left: 2.5rem;
+}
+
+.ml100{
+	margin-left: 10rem;
+}
+
+.mt7v, .back1{
+	margin-top: 7vh;
+}
+
+.mt16v{
+	margin-top: 16vh;
+}
+
+.mt33v{
+	margin-top: 33vh;
+}
+
+.mt45v{
+	margin-top: 45vh;
+}
+
+.mt25v{
+	margin-top: 25vh;
+}
+
+.mt4{
+	margin-top: .4rem;
+}
+
+.mt8{
+	margin-top: .8rem;
+}
+
+.mt16{
+	margin-top: 1.6rem;
+}
+
+.mt24{
+	margin-top: 2.4rem;
+}
+
+.mt30{
+	margin-top: 3rem;
+}
+
+.mt40{
+	margin-top: 4rem;
+}
+
+.mt90{
+	margin-top: 9rem;
+}
+
+.mb8{
+	margin-bottom: .8rem;
+}
+
+.mb20{
+	margin-bottom: 2rem;
+}
+
+.mx5v{
+	margin-left: 12vw;
+	margin-right: 12vw;
+}
+
+.mx15{
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.pr9v{
+	padding-right: 9vw;
+}
+
+.pt8{
+	padding-top: .8rem;
+}
+
+.py30{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.pb100{
+	padding-bottom: 10rem;
+}
+
+footer{
+	background:url(back_footer.png);
+	height:692px;
+}
